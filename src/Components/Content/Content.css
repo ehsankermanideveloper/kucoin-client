@@ -1,0 +1,59 @@
+.content {
+    margin: 0;
+    padding: 10px 0 0;
+    word-spacing: 3px;
+    user-select: none;
+    position: relative;
+    background: url("../../images/bg-content.png") repeat;
+    color: #fff;
+    background-size: 40%;
+}
+
+.content .content-title {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "VZRB";
+}
+.content p {
+    white-space: pre-line;
+    text-align: center;
+    direction: rtl;
+    margin-top: 20px;
+
+}
+.imageContent {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+.content .main-content {
+    padding: 50px 0;
+}
+.content .main-content .main-content-item{
+    margin-top: 70px;
+    line-height: 32px;
+    border: 2px solid #042935;
+    border-radius: 25px;
+    padding: 30px 0;
+    font-family: 'VZR';
+}
+.content .main-content .main-content-item h3 {
+    font-family: "VZRB";
+}
+.content .main-content .main-content-item:nth-child(odd) > div {
+    flex-direction: row-reverse;
+}
+@media (max-width: 592px) {
+    .content p {
+        white-space: normal;
+    }
+}
+@media (max-width: 1000px) {
+    .content p {
+        white-space: normal;
+    }
+}
+
+body[dir="ltr"] .content p{
+    direction: ltr;
+}

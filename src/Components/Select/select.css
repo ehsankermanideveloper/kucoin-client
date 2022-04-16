@@ -1,0 +1,78 @@
+.select {
+    width: 100%;
+    height: 100%;
+}
+
+.select .label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: #000;
+}
+.currency-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.list-currency {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 25px;
+    top: 0;
+    bottom: 0;
+    background: #180416;
+    z-index: 3;
+    border-radius: 25px;
+    color: #fff;
+}
+.list-currency ul{
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+    background: #E7E6E6;
+    border-radius: 8px;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.list-currency ul li {
+    padding: 13px 10px;
+    border-bottom: 2px solid #4B4D54;
+    text-align: left;
+    color: #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.list-currency ul li:last-child{
+    border-bottom: 0;
+}
+.list-currency ul li span {
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.chevron {
+    width: 20px;
+}
+.logo-currency {
+    width: 40px;
+    border-radius: 50%;
+}
+
+input.search-currency {
+    width: 100%;
+    padding: 10px;
+    background: #E7E6E6;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 20px;
+}

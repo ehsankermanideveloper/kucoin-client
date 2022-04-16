@@ -1,0 +1,63 @@
+#road-map {
+    padding: 60px;
+    background: linear-gradient(to left, #D2D3D4, #FEFEFE);
+}
+
+.grid-row-5 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.grid-item:nth-child(even) {
+    margin-top: 100px;
+}
+
+.road-map-step {
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    transform: skew(52deg, -40deg) translateX(-53px) rotateX(61deg);
+    font-size: 18px;
+    top: -46px;
+}
+
+.road-map-plate {
+    height: 85px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F6F0F7;
+    box-shadow: 35px 33px 21px -3px rgba(119, 125, 188, 0.36);
+    transform: rotateX(45deg) rotateZ(45deg);
+    border-radius: 15px;
+    border-right: 4px solid #45529F;
+    border-bottom: 4px solid #45529F;
+}
+.road-map-plate img {
+    width: 60%;
+}
+.road-map-year {
+    border-bottom: 2px solid #4F80FF;
+    width: max-content;
+    padding-bottom: 10px;
+    height: max-content;
+    margin-top: 60px;
+}
+
+.road-map-text {
+    margin-top: 30px;
+}
+
+.road-map-description {
+    background: #FAD3D5;
+    padding: 0 3px;
+}
